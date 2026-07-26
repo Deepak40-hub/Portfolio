@@ -504,7 +504,6 @@ transform:rotate(360deg);
 }
 
 }
-
 /* ===========================
 FLOATING ICONS
 =========================== */
@@ -521,9 +520,9 @@ animation:float 5s ease-in-out infinite;
 
 .java{
 
-top:-10%;
+top:-20%;
 
-left:4.5%;
+left:20.5%;
 
 
 }
@@ -564,7 +563,7 @@ right:2%;
 
 left:0%;
 
-top:45%;
+top:55%;
 
 }
 
@@ -576,19 +575,19 @@ left:55%;
 
 }
 
-.figma{
+.servicenow{
 
-bottom:-35%;
+bottom:-25%;
 
-right:40%;
+right:35%;
 
 }
 
-.servicenow{
+.figma{
 
 top:20%;
 
-left:-15%;
+left:5%;
 
 }
 
