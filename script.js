@@ -129,27 +129,37 @@ scrollBtn.addEventListener("click", () => {
 
 const toggle = document.getElementById("theme-toggle");
 
-let dark = true;
+let dark = localStorage.getItem("theme") !== "light";
 
-toggle.addEventListener("click", () => {
+function applyTheme() {
 
     if (dark) {
-
-        document.body.classList.add("light-mode");
-
-        toggle.innerHTML =
-            '<i class="fa-solid fa-sun"></i>';
-
-    } else {
 
         document.body.classList.remove("light-mode");
 
         toggle.innerHTML =
             '<i class="fa-solid fa-moon"></i>';
 
+    } else {
+
+        document.body.classList.add("light-mode");
+
+        toggle.innerHTML =
+            '<i class="fa-solid fa-sun"></i>';
+
     }
 
+}
+
+applyTheme();
+
+toggle.addEventListener("click", () => {
+
     dark = !dark;
+
+    applyTheme();
+
+    localStorage.setItem("theme", dark ? "dark" : "light");
 
 });
 
