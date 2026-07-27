@@ -504,6 +504,7 @@ transform:rotate(360deg);
 }
 
 }
+
 /* ===========================
 FLOATING ICONS
 =========================== */
@@ -1273,4 +1274,108 @@ padding:20px;
 width:100%;
 }
 
+}
+
+/* ===========================
+   LIGHT THEME
+=========================== */
+
+body.light-mode{
+
+--bg:#f8fafc;
+--card:#ffffff;
+--text:#0f172a;
+--text2:#475569;
+--glass:rgba(15,23,42,.05);
+--shadow:0 15px 40px rgba(15,23,42,.12);
+
+background:linear-gradient(135deg,#f8fafc,#eef2f7,#e2e8f0);
+color:#0f172a;
+
+}
+
+body.light-mode::-webkit-scrollbar-track{
+background:#e2e8f0;
+}
+
+body.light-mode header{
+background:rgba(255,255,255,.75);
+box-shadow:0 2px 20px rgba(15,23,42,.06);
+}
+
+body.light-mode .logo,
+body.light-mode .nav-links a,
+body.light-mode .hero h1,
+body.light-mode .about-content h3,
+body.light-mode .contact-info h3,
+body.light-mode .btn-secondary{
+color:#0f172a;
+}
+
+body.light-mode #theme-toggle{
+color:#0f172a;
+background:rgba(15,23,42,.06);
+}
+
+body.light-mode .hero-description,
+body.light-mode .about-content p,
+body.light-mode .project-content p,
+body.light-mode .achievement-card p,
+body.light-mode .certificate-card p,
+body.light-mode .contact-info p{
+color:#475569;
+}
+
+body.light-mode .timeline-content span{
+color:#64748b;
+}
+
+body.light-mode .social-icons a,
+body.light-mode .contact-icons a{
+background:rgba(15,23,42,.06);
+color:#0f172a;
+}
+
+body.light-mode .social-icons a:hover,
+body.light-mode .contact-icons a:hover{
+color:#ffffff;
+}
+
+body.light-mode .info-card,
+body.light-mode .skill-card,
+body.light-mode .project-card,
+body.light-mode .achievement-card{
+background:#ffffff;
+border:1px solid rgba(15,23,42,.08);
+box-shadow:0 8px 25px rgba(15,23,42,.06);
+}
+
+body.light-mode .project-tech span{
+background:#e2e8f0;
+color:#0891b2;
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea{
+background:#ffffff;
+color:#0f172a;
+border:1px solid rgba(15,23,42,.15);
+}
+
+body.light-mode .contact-form input::placeholder,
+body.light-mode .contact-form textarea::placeholder{
+color:#94a3b8;
+}
+
+body.light-mode .profile-card{
+border:4px solid rgba(15,23,42,.08);
+}
+
+body.light-mode footer{
+background:#f1f5f9;
+color:#475569;
+}
+
+body.light-mode .cursor-glow{
+background:radial-gradient(circle,rgba(79,70,229,.12),transparent 70%);
 }
